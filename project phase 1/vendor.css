@@ -1,0 +1,40 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8; 
+}
+
+.vendor {
+    padding: 2rem 1rem; 
+    text-align: center; 
+}
+
+
+.vendor .heading {
+    margin-bottom: 2rem; 
+}
+
+.vendor .heading h1 {
+    font-size: 2.5rem; 
+    color: #333; 
+}
+
+.vendor .heading img {
+    max-width: 100%; 
+    height: auto; 
+    margin-top: 1rem; 
+}
+
+
+.vendor video {
+    width: 90%; 
+    height: auto; 
+    object-fit: cover; 
+    max-height: 500px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+

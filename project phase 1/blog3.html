@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Wedding Themes to Consider</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Playfair Display', serif;
+            background-color: rgba(255, 192, 203, 0.936);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.5s ease-in-out;
+        }
+
+        header .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: palevioletred;
+            transition: color 0.3s;
+        }
+
+        header .logo:hover {
+            color: #333;
+        }
+
+        .navbar a {
+            margin-left: 1.5rem;
+            color: #333;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: palevioletred;
+        }
+
+        .blog-content {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        .blog-content h1 {
+            font-size: 2.5rem;
+            color: palevioletred;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            animation: fadeSlideIn 1.2s ease-out;
+        }
+
+        .tips-list {
+            list-style: decimal inside;
+            padding-left: 1rem;
+            color: #555;
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+
+        .tips-list li {
+            margin-bottom: 1.5rem;
+            animation: fadeIn 1s ease-in-out forwards;
+            animation-delay: 0.3s;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: #fff;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+
+            .navbar a {
+                margin: 0.5rem 0;
+            }
+
+            .blog-content {
+                padding: 1rem;
+            }
+
+            header {
+                padding: 1rem;
+            }
+
+            .footer p {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Marriage in 1</a>
+        <nav class="navbar">
+            <a href="index.html#home">HOME</a>
+            <a href="index.html#vendor">VENDORS</a>
+            <a href="index.html#clients">CLIENTS</a>
+            <a href="index.html#gallery">ABOUT</a>
+            <a href="index.html#blog">BLOG</a>
+            <a href="index.html#contact">CONTACT</a>
+        </nav>
+    </header>
+
+    <section class="blog-content">
+        <h1>Unique Wedding Themes to Consider</h1>
+        <ol class="tips-list">
+            <li><strong>Rustic Romance:</strong> Incorporate natural elements like wood, burlap, and greenery to create a cozy, countryside atmosphere. Perfect for outdoor or barn venues.</li>
+            <li><strong>Bohemian Bliss:</strong> Embrace a free-spirited vibe with whimsical florals, dreamcatchers, and a relaxed seating arrangement. A beach or garden setting complements this theme well.</li>
+            <li><strong>Vintage Elegance:</strong> Take inspiration from past decades with vintage attire, classic decor, and antique touches. Think Great Gatsby, Hollywood glam, or even Victorian themes.</li>
+            <li><strong>Enchanted Forest:</strong> Turn your wedding into a magical woodland with fairy lights, mossy decor, and lush florals. An outdoor venue with towering trees is ideal for this look.</li>
+            <li><strong>Minimalist Chic:</strong> Clean lines, muted colors, and a "less is more" approach define this theme. This style works well in modern, industrial, or gallery-like settings.</li>
+            <li><strong>Tropical Paradise:</strong> Incorporate vibrant colors, tropical florals, and exotic fruits. Great for beach venues or summer weddings, adding a splash of color and liveliness.</li>
+            <li><strong>Celestial Nights:</strong> A starlit sky, constellation decor, and dark hues create an ethereal, otherworldly atmosphere. This theme works well for evening weddings with outdoor settings.</li>
+            <li><strong>Modern Fairytale:</strong> Capture the enchantment of classic tales with romantic lighting, floral arches, and delicate accents for a dreamlike wedding experience.</li>
+            <li><strong>Travel-Inspired Adventure:</strong> Infuse your love for travel with decor inspired by your favorite destinations. Include maps, globes, and even local cuisine to make guests feel like globetrotters.</li>
+            <li><strong>Eco-Friendly Green:</strong> Use sustainable, organic decor, recycled materials, and locally sourced florals. This theme emphasizes environmental consciousness for a green, beautiful wedding.</li>
+        </ol>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 ehe | All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

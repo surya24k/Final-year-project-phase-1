@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Section</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: rgba(255, 192, 203, 0.584);
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: palevioletred;
+        }
+        .vendor-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+        .vendor-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: calc(30% - 40px);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        .vendor-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        .vendor-card h2 {
+            font-size: 1.5rem;
+            margin: 0;
+            color: #333;
+        }
+        .vendor-card p {
+            margin: 10px 0;
+            color: #555;
+        }
+        .vendor-card button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: pink;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            
+            
+        }
+        .vendor-card button:hover {
+            background-color: palevioletred;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Our Wedding Vendors</h1>
+    <div class="vendor-section">
+        <div class="vendor-card" onclick="location.href='dj.html'">
+            <h2>DJ Services</h2>
+            <p>Professional DJs to set the perfect mood for your wedding.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="vendor-card" onclick="location.href='invitations.html'">
+            <h2>Invitations</h2>
+            <p>Customizable wedding invitations that fit your theme.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="vendor-card" onclick="location.href='catering.html'">
+            <h2>Catering</h2>
+            <p>Delicious catering options to satisfy every palate.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="vendor-card" onclick="location.href='venue&hall.html'">
+            <h2>Venue & Hall</h2>
+            <p>Stunning venues and halls for your perfect day.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="vendor-card" onclick="location.href='bridalmakeover.html'">
+            <h2>Bridal Makeover</h2>
+            <p>Experienced makeup artists to make you look your best.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="vendor-card" onclick="location.href='photography.html'">
+            <h2>Photography</h2>
+            <p>Capturing every moment of your special day.</p>
+            <button>Learn More</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Importance of Hiring a Wedding Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Playfair Display', serif;
+            background-color: rgba(255, 192, 203, 0.936);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.5s ease-in-out;
+        }
+
+        header .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: palevioletred;
+            transition: color 0.3s;
+        }
+
+        header .logo:hover {
+            color: #333;
+        }
+
+        .navbar a {
+            margin-left: 1.5rem;
+            color: #333;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: palevioletred;
+        }
+
+        .blog-content {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        .blog-content h1 {
+            font-size: 2.5rem;
+            color: palevioletred;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            animation: fadeSlideIn 1.2s ease-out;
+        }
+
+        .tips-list {
+            list-style: decimal inside;
+            padding-left: 1rem;
+            color: #555;
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+
+        .tips-list li {
+            margin-bottom: 1.5rem;
+            animation: fadeIn 1s ease-in-out forwards;
+            animation-delay: 0.3s;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: #fff;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+
+            .navbar a {
+                margin: 0.5rem 0;
+            }
+
+            .blog-content {
+                padding: 1rem;
+            }
+
+            header {
+                padding: 1rem;
+            }
+
+            .footer p {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Marriage in 1</a>
+        <nav class="navbar">
+            <a href="index.html#home">HOME</a>
+            <a href="index.html#vendor">VENDORS</a>
+            <a href="index.html#clients">CLIENTS</a>
+            <a href="index.html#gallery">ABOUT</a>
+            <a href="index.html#blog">BLOG</a>
+            <a href="index.html#contact">CONTACT</a>
+        </nav>
+    </header>
+
+    <section class="blog-content">
+        <h1>The Importance of Hiring a Wedding Planner</h1>
+        <ol class="tips-list">
+            <li><strong>Stress Reduction:</strong> A wedding planner handles the details and logistics, allowing you to enjoy the planning process without the stress.</li>
+            <li><strong>Expert Advice:</strong> Planners bring expertise and industry knowledge, offering advice on everything from vendors to budgets.</li>
+            <li><strong>Vendor Management:</strong> A planner has established relationships with trusted vendors, simplifying the selection process and ensuring quality services.</li>
+            <li><strong>Budget Management:</strong> Planners help you stick to your budget by suggesting cost-effective solutions and keeping track of expenses.</li>
+            <li><strong>Problem Solving:</strong> Planners are skilled in handling last-minute changes and challenges, keeping your wedding day smooth and stress-free.</li>
+            <li><strong>Time Management:</strong> With a planner, every task is organized and timely, ensuring you stay on track with deadlines and decisions.</li>
+            <li><strong>Creative Ideas:</strong> Planners bring creative ideas and can help tailor the wedding to fit your unique vision and style.</li>
+            <li><strong>Day-of Coordination:</strong> A planner oversees all the details on the day of the wedding, so you can focus on celebrating with loved ones.</li>
+            <li><strong>Personal Touch:</strong> Planners work to understand your preferences and ensure your wedding reflects your personality and values.</li>
+            <li><strong>Peace of Mind:</strong> With a wedding planner, you can relax, knowing that an experienced professional is handling every detail for a flawless day.</li>
+        </ol>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 ehe | All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

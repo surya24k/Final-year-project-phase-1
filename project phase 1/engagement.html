@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engagement - Marriage in 1</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset and Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: rgba(255, 192, 203, 0.936);
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #ffffff;
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-decoration: none;
+            color: palevioletred;
+            transition: color 0.3s ease-in-out;
+        }
+
+        header .logo:hover {
+            color: palevioletred;
+        }
+
+        .navbar a {
+            color: #333;
+            text-decoration: none;
+            margin-left: 15px;
+            font-size: 1em;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: palevioletred;
+            text-decoration: underline;
+        }
+
+        /* Content Section */
+        .content-section {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            transition: all 0.3s ease-in-out;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.5s ease-in-out; /* Fade-in effect */
+        }
+
+        /* Keyframes for fade-in effect */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .heading {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .heading h1 {
+            font-size: 2.5em;
+            color: black;
+            font-family: 'Georgia', serif;
+            transition: color 0.3s ease;
+        }
+
+        .heading img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            transition: transform 0.4s ease, opacity 0.4s ease;
+        }
+
+        .heading img:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        /* Content Container */
+        .content-container {
+            display: flex;
+            align-items: flex-start; /* Align to the top */
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+            padding: 20px;
+        }
+
+        /* Images in Content */
+        .content-image img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+            transition: transform 0.4s ease, opacity 0.4s ease;
+        }
+
+        .content-image img:hover {
+            transform: scale(1.1);
+            opacity: 0.9;
+        }
+
+        /* Text Content */
+        .content-text {
+            max-width: 500px;
+            text-align: left;
+            transition: color 0.3s ease;
+        }
+
+        .content-text p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            color: #555;
+            transition: color 0.3s ease;
+        }
+
+        .content-text h3 {
+            font-size: 1.8em;
+            color: palevioletred;
+            margin-bottom: 15px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .content-text ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .content-text ul li {
+            margin-bottom: 10px;
+            font-size: 1.05em;
+            color: #333;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .content-text ul li:hover {
+            color: #ff4081;
+        }
+
+        /* New Services Section */
+        .services-section {
+            margin-top: 50px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.5s ease-in-out; /* Fade-in effect */
+        }
+
+        .services-section h3 {
+            text-align: center;
+            color: black;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .service {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 10px 0;
+            transition: transform 0.3s ease, background 0.3s ease;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        .service:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 192, 203, 0.5);
+        }
+
+        .service img {
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 50px;
+        }
+
+        .footer p {
+            font-size: 0.9em;
+            transition: color 0.3s ease;
+        }
+
+        .footer p:hover {
+            color: #ff4081;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">Marriage in 1</a>
+    <nav class="navbar">
+        <a href="index.html#home">HOME</a>
+        <a href="index.html#vendor">VENDORS</a>
+        <a href="index.html#clients">CLIENTS</a>
+        <a href="index.html#gallery">ABOUT</a>
+        <a href="index.html#blog">BLOG</a>
+        <a href="index.html#contact">CONTACT</a>
+    </nav>
+</header>
+
+<section class="content-section">
+    <div class="heading">
+        <h1>Engagement</h1>
+        <img src="images/header-img.png" alt="Header Image">
+    </div>
+    <div class="content-container">
+        <div class="content-image">
+            <img src="images/engagement.jpg" alt="Engagement Image">
+        </div>
+        <div class="content-text">
+            <p>Your engagement is the start of your beautiful journey together. We celebrate this special milestone by creating memorable moments that reflect your unique love story. From intimate engagement parties to grand celebrations, we ensure every detail is handled perfectly.</p>
+            <h3>Our Engagement Services</h3>
+            <ul>
+                <li>Customized Engagement Party Planning</li>
+                <li>Elegant Decoration and Ambiance</li>
+                <li>Guest Invitations and Coordination</li>
+                <li>Memorable Photography and Videography</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- New Services Section -->
+<section class="services-section">
+    <h3>Additional Services We Offer</h3>
+    <div class="service">
+        <img src="images/img4.jpg" alt="Venue Decoration">
+        <div>
+            <h4>Venue Decoration</h4>
+            <p>Transform your venue into a beautiful setting that reflects your style and personality.</p>
+        </div>
+    </div>
+    <div class="service">
+        <img src="images/img5.jpg" alt="Catering Services">
+        <div>
+            <h4>Catering Services</h4>
+            <p>Delicious food and exquisite presentations to satisfy your guests.</p>
+        </div>
+    </div>
+    <div class="service">
+        <img src="images/img2.jpg" alt="Entertainment Services">
+        <div>
+            <h4>Entertainment</h4>
+            <p>Engaging entertainment options that will keep your guests entertained throughout the event.</p>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>&copy; 2024 ehe | All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

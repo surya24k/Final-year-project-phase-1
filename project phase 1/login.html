@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="auth.css">
+    <style>
+        .role-selection {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            cursor: pointer;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .role-selection input[type="radio"] {
+            margin-right: 0.3rem;
+        }
+    </style>
+</head>
+
+<body class="login-page">
+    <div class="form-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+
+            <div class="role-selection">
+                <label>
+                    <input type="radio" name="role" value="user" required>
+                    User
+                </label>
+                <label>
+                    <input type="radio" name="role" value="vendor">
+                    Vendor
+                </label>
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <div id="otpSection" style="display:none;">
+            <input type="text" id="otp" placeholder="Enter OTP" required>
+            <button id="verifyOtpButton">Verify OTP</button>
+        </div>
+
+        <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+    </div>
+
+    <script>
+        let generatedOtp;
+
+        function generateOtp() {
+            return Math.floor(100000 + Math.random() * 900000).toString();
+        }
+
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const selectedRole = document.querySelector('input[name="role"]:checked');
+            if (!selectedRole) {
+                alert("Please select if you are a User or a Vendor.");
+                return;
+            }
+
+            const role = selectedRole.value;
+            console.log("Role selected:", role);
+
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            if (email && password) {
+                const isExistingAccount = confirm("Do you already have an account?");
+
+                if (isExistingAccount) {
+                    alert("Login successful!");
+
+                    // Redirect based on the selected role
+                    window.location.href = role === "vendor" ? 'vendor_section.html' : 'index.html'; 
+                } else {
+                    generatedOtp = generateOtp();
+                    alert("Your OTP is: " + generatedOtp);
+                    
+                    document.getElementById('loginForm').style.display = 'none';
+                    document.getElementById('otpSection').style.display = 'block';
+                }
+            }
+        });
+
+        document.getElementById('verifyOtpButton').addEventListener('click', function() {
+            const otp = document.getElementById('otp').value;
+
+            if (otp === generatedOtp) {
+                alert("OTP verified successfully!");
+
+                // Redirect based on the selected role after OTP verification
+                const selectedRole = document.querySelector('input[name="role"]:checked');
+                const role = selectedRole.value;
+                window.location.href = role === "vendor" ? 'vendor_section.html' : 'index.html'; 
+            } else {
+                alert("Invalid OTP. Please try again.");
+            }
+        });
+    </script>
+</body>
+</html>

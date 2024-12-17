@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save the Date - Marriage in 1</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset and Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: rgba(255, 192, 203, 0.936);
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #ffffff;
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-decoration: none;
+            color: palevioletred;
+            transition: color 0.3s ease-in-out;
+        }
+
+        header .logo:hover {
+            color: palevioletred;
+        }
+
+        .navbar a {
+            color: #333;
+            text-decoration: none;
+            margin-left: 15px;
+            font-size: 1em;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: palevioletred;
+            text-decoration: underline;
+        }
+
+        /* Content Section */
+        .content-section {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            transition: all 0.3s ease-in-out;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .heading {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .heading h1 {
+            font-size: 2.5em;
+            color: black;
+            font-family: 'Georgia', serif;
+            transition: color 0.3s ease;
+        }
+
+        .heading img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            transition: transform 0.4s ease, opacity 0.4s ease;
+        }
+
+        .heading img:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        /* Content Container */
+        .content-container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+            padding: 20px;
+        }
+
+        /* Images in Content */
+        .content-image img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+            transition: transform 0.4s ease, opacity 0.4s ease;
+        }
+
+        .content-image img:hover {
+            transform: scale(1.1);
+            opacity: 0.9;
+        }
+
+        /* Text Content */
+        .content-text {
+            max-width: 500px;
+            text-align: left;
+            transition: color 0.3s ease;
+        }
+
+        .content-text p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            color: #555;
+            transition: color 0.3s ease;
+        }
+
+        .content-text h3 {
+            font-size: 1.8em;
+            color: palevioletred;
+            margin-bottom: 15px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .content-text ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .content-text ul li {
+            margin-bottom: 10px;
+            font-size: 1.05em;
+            color: #333;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .content-text ul li:hover {
+            color: #ff4081;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 50px;
+        }
+
+        .footer p {
+            font-size: 0.9em;
+            transition: color 0.3s ease;
+        }
+
+        .footer p:hover {
+            color: #ff4081;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">Marriage in 1</a>
+    <nav class="navbar">
+        <a href="index.html#home">HOME</a>
+        <a href="index.html#vendor">VENDORS</a>
+        <a href="index.html#clients">CLIENTS</a>
+        <a href="index.html#gallery">ABOUT</a>
+        <a href="index.html#blog">BLOG</a>
+        <a href="index.html#contact">CONTACT</a>
+    </nav>
+</header>
+
+<section class="content-section">
+    <div class="heading">
+        <h1>Save the Date</h1>
+        <img src="images/header-img.png" alt="Save the Date Image">
+    </div>
+    <div class="content-container">
+        <div class="content-image">
+            <img src="images/save-the-date.jpg" alt="Save the Date Image">
+        </div>
+        <div class="content-text">
+            <p>Your big day is approaching, and it’s time to let everyone know! Our "Save the Date" services ensure your announcement is beautiful, memorable, and reaches your guests with elegance.</p>
+            <h3>Our Save the Date Services</h3>
+            <ul>
+                <li>Personalized "Save the Date" Announcements</li>
+                <li>Custom Designed Invites and E-vites</li>
+                <li>Coordinated Mailing and Guest Tracking</li>
+                <li>Elegant Digital Announcements</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>&copy; 2024 ehe | All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

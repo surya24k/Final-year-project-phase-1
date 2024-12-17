@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Tips for Planning Your Dream Wedding</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        body {
+            font-family: 'Playfair Display', serif;
+            background-color: rgba(255, 192, 203, 0.936);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.5s ease-in-out;
+        }
+
+        header .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: palevioletred;
+            transition: color 0.3s;
+        }
+
+        header .logo:hover {
+            color: #333;
+        }
+
+        .navbar a {
+            margin-left: 1.5rem;
+            color: #333;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: palevioletred;
+        }
+
+        
+        .blog-content {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        
+        .blog-content h1 {
+            font-size: 2.5rem;
+            color: palevioletred;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            animation: fadeSlideIn 1.2s ease-out;
+        }
+
+        
+        .tips-list {
+            list-style: decimal inside;
+            padding-left: 1rem;
+            color: #555;
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+
+        .tips-list li {
+            margin-bottom: 1.5rem;
+            animation: fadeIn 1s ease-in-out forwards;
+            animation-delay: 0.3s;
+        }
+
+        
+        .footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: #fff;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+
+            .navbar a {
+                margin: 0.5rem 0;
+            }
+
+            .blog-content {
+                padding: 1rem;
+            }
+
+            header {
+                padding: 1rem;
+            }
+
+            .footer p {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Marriage in 1</a>
+        <nav class="navbar">
+            <a href="index.html#home">HOME</a>
+            <a href="index.html#vendor">VENDORS</a>
+            <a href="index.html#clients">CLIENTS</a>
+            <a href="index.html#gallery">ABOUT</a>
+            <a href="index.html#blog">BLOG</a>
+            <a href="index.html#contact">CONTACT</a>
+        </nav>
+    </header>
+
+    <section class="blog-content">
+        <h1>10 Tips for Planning Your Dream Wedding</h1>
+        <ol class="tips-list">
+            <li><strong>Set Your Budget:</strong> Start by defining a realistic budget. List essential expenses, such as venue, catering, dress, and photography. Allocate a portion for each to prevent overspending.</li>
+            <li><strong>Choose a Date:</strong> Selecting a date sets the planning in motion. Consider significant dates or seasons that fit your vision. Ensure availability of venues and key guests.</li>
+            <li><strong>Pick a Theme and Style:</strong> Decide on a theme that reflects your personalities, such as rustic, vintage, modern, or beach. This will help guide decor, color palette, and even attire.</li>
+            <li><strong>Create a Guest List:</strong> Your guest list impacts your venue and budget. Discuss with your partner and families to finalize who should be part of your day.</li>
+            <li><strong>Select the Perfect Venue:</strong> The venue should align with your theme and accommodate your guests. Book early, as popular venues fill up quickly, especially during peak seasons.</li>
+            <li><strong>Hire a Wedding Planner:</strong> A planner can simplify the process, offering guidance and managing vendors. Look for a professional who understands your vision and budget.</li>
+            <li><strong>Choose Your Vendors Carefully:</strong> Research and book trusted vendors for catering, photography, entertainment, and florals. Schedule tastings, view portfolios, and read reviews to ensure quality.</li>
+            <li><strong>Decide on Attire Early:</strong> Start shopping for attire several months in advance, especially if alterations are required. This applies to bridal gowns, bridesmaid dresses, and suits.</li>
+            <li><strong>Plan the Ceremony and Reception Details:</strong> Arrange ceremony and reception decor, seating, and music. Include personal touches, such as vows, readings, or specific traditions that matter to you.</li>
+            <li><strong>Send Invitations Early:</strong> Send out invitations at least three months before the wedding. This allows guests time to RSVP and make arrangements. Use “Save the Date” cards as needed.</li>
+        </ol>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 ehe | All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
